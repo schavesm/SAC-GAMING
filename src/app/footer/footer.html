@@ -1,1 +1,45 @@
-<p>footer works!</p>
+<footer class="mt-5 border-top border-secondary bg-dark-subtle text-body-secondary">
+  <div class="container py-5">
+    <div class="row g-4">
+      <section class="col-12 col-md-6 col-lg-4" aria-labelledby="footer-store-title">
+        <h2 class="fs-6 fw-bold text-white mb-3" id="footer-store-title">SAC Gaming</h2>
+        <p class="lh-lg">
+          Tu tienda de videojuegos para descubrir nuevas aventuras. Encuentra tus juegos
+          favoritos, guárdalos y prepárate para tu próxima partida.
+        </p>
+      </section>
+
+      <nav class="col-6 col-lg-2" aria-labelledby="footer-products-title">
+        <h2 class="fs-6 fw-bold text-white mb-3" id="footer-products-title">Productos</h2>
+        <ul class="list-unstyled d-grid gap-2 mb-0">
+          <li><a class="link-secondary link-underline-opacity-0 link-underline-opacity-100-hover" routerLink="/" fragment="juegos-destacados">Videojuegos destacados</a></li>
+          <li><a class="link-secondary link-underline-opacity-0 link-underline-opacity-100-hover" routerLink="/" fragment="gamesCarousel">Aventura y acción</a></li>
+          <li><a class="link-secondary link-underline-opacity-0 link-underline-opacity-100-hover" routerLink="/" fragment="gamesCarousel">Carreras y ciencia ficción</a></li>
+        </ul>
+      </nav>
+
+      <nav class="col-6 col-lg-2" aria-labelledby="footer-links-title">
+        <h2 class="fs-6 fw-bold text-white mb-3" id="footer-links-title">Enlaces útiles</h2>
+        <ul class="list-unstyled d-grid gap-2 mb-0">
+          <li><a class="link-secondary link-underline-opacity-0 link-underline-opacity-100-hover" routerLink="/">Inicio</a></li>
+          <li><a class="link-secondary link-underline-opacity-0 link-underline-opacity-100-hover" routerLink="/" fragment="juegos-destacados">Juegos destacados</a></li>
+          <li><a class="link-secondary link-underline-opacity-0 link-underline-opacity-100-hover" routerLink="/login">Iniciar sesión</a></li>
+          <li><a class="link-secondary link-underline-opacity-0 link-underline-opacity-100-hover" routerLink="/register">Crear cuenta</a></li>
+        </ul>
+      </nav>
+
+      <section class="col-12 col-md-6 col-lg-4" aria-labelledby="footer-contact-title">
+        <h2 class="fs-6 fw-bold text-white mb-3" id="footer-contact-title">Contacto</h2>
+        <address class="mb-0">
+          <p>Bogotá, Colombia</p>
+          <p><a class="link-secondary link-underline-opacity-0 link-underline-opacity-100-hover" href="mailto:schavesm@ucompensar.edu.co">schavesm@ucompensar.edu.co</a></p>
+          <p><a class="link-secondary link-underline-opacity-0 link-underline-opacity-100-hover" href="tel:+3214818732">+321 481 8732</a></p>
+        </address>
+      </section>
+    </div>
+  </div>
+
+  <div class="bg-body-secondary py-3 text-center">
+    <p class="container mb-0">© {{ currentYear }} SAC Gaming. Todos los derechos reservados.</p>
+  </div>
+</footer>

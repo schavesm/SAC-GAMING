@@ -1,0 +1,17 @@
+.navbar-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.navbar-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: 0.25rem;
+}
+
+.navbar-action-icon {
+  filter: brightness(0) invert(1);
+}

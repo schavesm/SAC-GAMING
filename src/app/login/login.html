@@ -1,1 +1,57 @@
-<p>login works!</p>
+<section class="auth-layout row align-items-center g-4 g-lg-5 py-4 py-lg-5" aria-labelledby="login-title">
+  <div class="col-12 col-lg-7">
+    <div class="text-start">
+      <p class="text-primary mb-2">Tu biblioteca te espera</p>
+      <h2 class="display-4 fw-bold text-white mb-3">Vuelve al juego</h2>
+      <p class="fs-5 text-body-secondary mb-0">
+        Accede a tus compras, listas y partidas favoritas desde cualquier lugar.
+      </p>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-5">
+    <div class="card bg-dark text-light border-secondary shadow-lg p-4 p-md-5">
+      <h1 class="h2 fw-bold mb-2" id="login-title">Iniciar sesión</h1>
+      <p class="text-body-secondary mb-4">Ingresa a tu cuenta de SAC Gaming</p>
+
+      <form (submit)="$event.preventDefault()">
+        <div class="mb-3">
+          <label class="form-label fw-semibold" for="login-email">Correo electrónico</label>
+          <input
+            class="form-control"
+            id="login-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            placeholder="tucorreo@ejemplo.com"
+            required
+          />
+        </div>
+
+        <div class="mb-2">
+          <label class="form-label fw-semibold" for="login-password">Contraseña</label>
+          <input
+            class="form-control"
+            id="login-password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            placeholder="Ingresa tu contraseña"
+            required
+          />
+        </div>
+
+        <div class="my-2">
+          <a class="link-primary link-underline-opacity-0 link-underline-opacity-100-hover" href="#recuperar-contrasena">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <button class="btn btn-primary w-100 py-2 mt-3" type="submit">Iniciar sesión</button>
+      </form>
+
+      <p class="text-body-secondary text-start mt-4 mb-0">
+        ¿No tienes cuenta?
+        <a class="link-primary link-underline-opacity-0 link-underline-opacity-100-hover" routerLink="/register">Regístrate</a>
+      </p>
+    </div>
+  </div>
+</section>

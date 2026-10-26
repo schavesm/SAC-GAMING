@@ -1,0 +1,15 @@
+.carousel-item img {
+  height: clamp(18rem, 42vw, 34rem);
+  object-fit: cover;
+}
+
+.carousel-item::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 35%, rgb(0 0 0 / 75%));
+  content: '';
+}
+
+.carousel-caption {
+  z-index: 1;
+}

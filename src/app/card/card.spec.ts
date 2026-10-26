@@ -12,6 +12,15 @@ describe('Card', () => {
 
     fixture = TestBed.createComponent(Card);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('game', {
+      id: 1,
+      img: '/game.jpg',
+      title: 'Juego de prueba',
+      text: 'Descripción de prueba',
+      platform: 'PC',
+      genre: 'Aventura',
+      price: 100000,
+    });
     await fixture.whenStable();
   });
 

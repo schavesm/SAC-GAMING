@@ -1,1 +1,14 @@
-<p>home works!</p>
+<app-carousel></app-carousel>
+
+<section class="mt-5" id="juegos-destacados">
+  <h2>Videojuegos destacados</h2>
+  <div class="row g-4">
+    @for (game of games; track game.id) {
+      <div class="col-12 col-md-6 col-lg-4">
+        <app-card
+          [game]="game"
+        ></app-card>
+      </div>
+    }
+  </div>
+</section>

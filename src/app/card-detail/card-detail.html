@@ -1,0 +1,35 @@
+@if (loading()) {
+  <p>Cargando Pokémon...</p>
+} @else if (error()) {
+  <section class="text-center py-5" role="alert">
+    <h1 class="h3">No se encontró el Pokémon</h1>
+    <p>No se pudo cargar el detalle. Revisa el identificador e inténtalo de nuevo.</p>
+    <a class="btn btn-primary" routerLink="/">Volver al inicio</a>
+  </section>
+} @else if (pokemon(); as item) {
+  <article class="card card-detail">
+    <div class="row g-0 align-items-center">
+      <div class="col-12 col-md-5">
+        <img [src]="item.image" [alt]="item.name" class="card-detail__image">
+      </div>
+      <div class="col-12 col-md-7">
+        <div class="card-body p-4">
+          <p class="text-body-secondary mb-1">Pokédex #{{ item.id }}</p>
+          <h1 class="card-title text-capitalize">{{ item.name }}</h1>
+          <p><strong>Tipo:</strong> {{ item.types.join(', ') }}</p>
+          <p><strong>Altura:</strong> {{ item.height / 10 }} m</p>
+          <p><strong>Peso:</strong> {{ item.weight / 10 }} kg</p>
+          <div class="d-flex flex-wrap gap-2 mt-4">
+            <button class="btn btn-primary" type="button" disabled title="Disponible próximamente">
+              Comprar
+            </button>
+            <button class="btn btn-outline-primary" type="button" disabled title="Disponible próximamente">
+              Agregar al carrito
+            </button>
+            <a class="btn btn-link" routerLink="/">Volver al inicio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+}

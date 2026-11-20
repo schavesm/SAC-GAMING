@@ -1,0 +1,11 @@
+export interface Pokemon {
+  id: number;
+  name: string;
+  image: string;
+}
+
+export interface PokemonDetail extends Pokemon {
+  height: number;
+  weight: number;
+  types: string[];
+}
